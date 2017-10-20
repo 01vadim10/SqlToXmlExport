@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>cd8a70fc-c36f-49c3-8729-8650d28a7ef6</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SqlToXmlDbExport.py</StartupFile>
+    <StartupFile>argument_parser.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="SqlToXmlDbExport.py" />
+    <Compile Include="argument_parser.py" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
