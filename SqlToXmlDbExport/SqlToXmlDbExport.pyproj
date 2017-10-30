@@ -23,6 +23,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="argument_parser.py" />
+    <Compile Include="DBProcessing.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
