@@ -4,9 +4,9 @@ class DBProcessing(object):
     """This is class create SQL-commands conversion to Xml and save them into file"""
     server = 'localhost'
     database = 'SampleDB2'
-    username = 'sa'
-    password = 'your_password'
-    cnxn = pyodbc.connect('DRIVER={ODBC Driver 13 for SQL Server};SERVER='+server+';PORT=1443;DATABASE='+database+';')
+    username = 'vadimZ'
+    password = '1991'
+    cnxn = pyodbc.connect('DRIVER={SQL Server Native Client 11.0};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
     cursor = cnxn.cursor()
 
     def InsertQ():

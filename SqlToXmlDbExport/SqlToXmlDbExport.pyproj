@@ -5,13 +5,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>cd8a70fc-c36f-49c3-8729-8650d28a7ef6</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>argument_parser.py</StartupFile>
+    <StartupFile>crud.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>SqlToXmlDbExport</Name>
     <RootNamespace>SqlToXmlDbExport</RootNamespace>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,12 +25,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="argument_parser.py" />
+    <Compile Include="crud.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DBProcessing.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="main.py">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.5" />
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.5" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

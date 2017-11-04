@@ -1,6 +1,9 @@
-from DBProcessing import DBProcessing
-from argument_parser import Parser
+import sys
+import DBProcessing
+import Parser
 
 def main():
     parser = Parser()
     db = DBProcessing()
+
+    args = parser.parse()
