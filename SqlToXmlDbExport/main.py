@@ -1,6 +1,6 @@
 import sys
 import DBProcessing
-import Parser
+import argument_parser
 
 def main():
     parser = Parser()

@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>cd8a70fc-c36f-49c3-8729-8650d28a7ef6</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>crud.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -14,6 +14,9 @@
     <RootNamespace>SqlToXmlDbExport</RootNamespace>
     <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
     <InterpreterVersion>3.5</InterpreterVersion>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>-s MyServerTest --database SampleDb2</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +35,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="main.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="__main__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
