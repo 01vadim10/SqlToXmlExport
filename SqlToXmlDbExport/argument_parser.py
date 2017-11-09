@@ -19,32 +19,32 @@ class Parser(object):
     """
 
     def __init__(self):
-        self._parser = ArgumentParser(prog='ScoiX', description='Sql conversion operation in Xml')
+        self._parser = ArgumentParser(
+            prog='ScoiX', 
+            description='Sql conversion operation in Xml')
         self._add_arguments()
 
     def _add_arguments(self):
-        """Adds arguments to parser."""
+        """
+        Adds arguments to parser.
+        """
         self._parser.add_argument(
-            '-srv', '--server',
-            action='store_true',
+            '-s', '--server',
+            required=True,
             help="enter server name")
         self._parser.add_argument(
             '-db', '--database',
-            nargs='?',
-            const=get_alias(),
+            required=True,
             help='enter database name')
         self._parser.add_argument(
             '-u', '--username',
-            action='store_true',
             help='enter username')
         self._parser.add_argument(
             '-p', '--password',
-            action='store_true',
             help='enter password')
-        self._parser.add_argument(
-            '-h', '--help',
-            action='store_true',
-            help='show this help message and exit')
+        #self._parser.add_argument(
+        #    '-h', '--help',
+        #    help='show this help message and exit')
 
     def parse(self):
         return self._parser.parse_args()

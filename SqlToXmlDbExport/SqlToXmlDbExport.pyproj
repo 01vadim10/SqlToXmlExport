@@ -15,7 +15,7 @@
     <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
     <InterpreterVersion>3.5</InterpreterVersion>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>-s MyServerTest --database SampleDb2</CommandLineArguments>
+    <CommandLineArguments>-s localhost -db 2.1_by3 -u vadimZ -p 1991</CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -28,9 +28,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="argument_parser.py" />
-    <Compile Include="crud.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="DBProcessing.py">
       <SubType>Code</SubType>
     </Compile>
